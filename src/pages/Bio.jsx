@@ -137,7 +137,7 @@ export default function Bio() {
                             <motion.div variants={itemVariants} className="relative">
                                 <span className="absolute -left-[45px] top-1 w-3 h-3 rounded-full bg-accent ring-4 ring-background"></span>
                                 <span className="font-mono text-xs text-zinc-500 mb-2 block">2025 - Present</span>
-                                <h3 className="text-xl font-bold font-sans text-white mb-1">Master in Growth Marketing & Agenti AI</h3>
+                                <h3 className="text-xl font-bold font-sans text-white mb-1">Growth Marketing & AI Agents Master</h3>
                                 <span className="text-sm font-medium text-accent block mb-3">start2impact</span>
                                 <p className="text-zinc-400 leading-relaxed">A multidisciplinary path that combines strategic marketing, UX/UI design, and data analysis with a strong focus on artificial intelligence. You can take a look at my profile and my projects <a href="https://account.start2impact.it/profile/alberto-scalia
 " className="text-accent mb-3" >here.</a></p>
@@ -162,7 +162,7 @@ export default function Bio() {
                             <motion.div variants={itemVariants} className="relative">
                                 <span className="absolute -left-[45px] top-1 w-3 h-3 rounded-full bg-zinc-700 ring-4 ring-background"></span>
                                 <span className="font-mono text-xs text-zinc-500 mb-2 block">2021</span>
-                                <h3 className="text-xl font-bold font-sans text-white mb-1">Master in Editoria</h3>
+                                <h3 className="text-xl font-bold font-sans text-white mb-1">Master in Publishing</h3>
                                 <span className="text-sm font-medium text-zinc-300 block mb-3">Scuola del Libro</span>
                                 <p className="text-zinc-400 leading-relaxed">Practically a survival master for anyone who wants to print beautiful things without getting a nervous breakdown between one draft and another.</p>
                             </motion.div>
