@@ -1,0 +1,59 @@
+@import "abstracts/variables";
+@import "base/base";
+@import "components/navbar";
+@import "components/buttons";
+@import "components/cards";
+@import "layout/hero";
+@import "layout/grid";
+@import "layout/footer";
+
+// Styles Specifici rimasti
+.service-item .icon {
+  font-size: 2rem;
+  color: $neon-green;
+  margin-right: 1rem;
+}
+
+.timeline {
+  border-left: 2px solid rgba($neon-green, 0.3);
+  padding-left: 30px;
+  margin-left: 10px;
+  position: relative;
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -37px;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      background: $pure-black;
+      border: 2px solid $neon-green;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .date {
+      color: $neon-green;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    h5 {
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .company {
+      color: rgba(255, 255, 255, 0.6);
+      font-style: italic;
+      display: block;
+    }
+  }
+}

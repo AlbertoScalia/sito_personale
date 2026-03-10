@@ -1,0 +1,27 @@
+.btn-primary {
+  background-color: $neon-green;
+  border-color: $neon-green;
+  color: $text-dark;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+
+  &:hover, &:active, &:focus {
+    background-color: $text-white;
+    border-color: $text-white;
+    color: $text-dark;
+    box-shadow: none;
+  }
+}
+
+.btn-outline-light {
+  border-color: $text-white;
+  color: $text-white;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+
+  &:hover, &:active, &:focus {
+    background-color: $text-white;
+    color: $text-dark;
+    box-shadow: none;
+  }
+}

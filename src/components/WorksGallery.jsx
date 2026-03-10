@@ -1,0 +1,94 @@
+import { motion } from 'framer-motion';
+import LiquidCard from './ui/LiquidCard';
+import MagneticButton from './ui/MagneticButton';
+import { Link } from 'react-router-dom';
+
+const projects = [
+    {
+        title: "Start2impact Master Projects",
+        subtitle: "A comprehensive collection of personal projects developed during the Master's program in Growth Marketing, UX/UI Design, and Data Analytics.",
+        image: "/sito_personale/assets/images/project0.webp",
+        badges: ["Growth Marketing", "UX/UI Design", "Data Analytics", "AI Business Strategy"],
+        link: "https://account.start2impact.it/profile/alberto-scalia"
+    },
+    {
+        title: "Rivista Forward",
+        subtitle: "Art direction and design for a healthcare and multimedia horizon scanning project.",
+        image: "/sito_personale/assets/images/project2.webp",
+        badges: ["Art Direction", "Editorial", "Layout"],
+        link: "https://forward.recentiprogressi.it/it/"
+    },
+    {
+        title: "lay0ut magazine",
+        subtitle: "Art direction and experimental layout work for lay0ut magazine.",
+        image: "/sito_personale/assets/images/project3.webp",
+        badges: ["Art Direction", "Experimental", "Layout"],
+        link: "https://www.layoutmagazine.it/senza-scheletro-il-nuovo-cartaceo-di-leiaut-megasin/"
+    }
+];
+
+export default function WorksGallery() {
+    return (
+        <section id="progetti" className="relative py-32 px-6 lg:px-12 w-full mx-auto max-w-7xl">
+            <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
+                <h2 className="text-4xl md:text-6xl font-sans font-bold tracking-tighter">
+                    Here's how I spent <br />
+                    <span className="text-accent">my latest late nights</span>
+                </h2>
+                <Link to="/works" className="hidden md:inline-flex">
+                    <MagneticButton className="bg-white text-black hover:bg-zinc-200 w-full h-full">
+                        View all
+                    </MagneticButton>
+                </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {projects.map((project, idx) => (
+                    <motion.a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        key={idx}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ delay: idx * 0.1, type: "spring", stiffness: 100, damping: 20 }}
+                        className="group block"
+                    >
+                        <LiquidCard className="p-2 h-full flex flex-col rounded-[2rem]">
+                            <div className="relative w-full aspect-[4/3] rounded-[1.5rem] overflow-hidden bg-zinc-900 mb-6">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+                            </div>
+
+                            <div className="px-4 pb-6 mt-auto">
+                                <h3 className="text-xl font-bold font-sans tracking-tight mb-2 group-hover:text-accent transition-colors">{project.title}</h3>
+                                <p className="text-zinc-400 text-sm mb-6">{project.subtitle}</p>
+
+                                <div className="flex flex-wrap gap-2">
+                                    {project.badges.map((badge, bIdx) => (
+                                        <span key={bIdx} className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs text-zinc-300 font-mono">
+                                            {badge}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        </LiquidCard>
+                    </motion.a>
+                ))}
+            </div>
+
+            <div className="mt-12 flex justify-center md:hidden">
+                <Link to="/works">
+                    <MagneticButton className="bg-white text-black hover:bg-zinc-200">
+                        View all projects
+                    </MagneticButton>
+                </Link>
+            </div>
+        </section>
+    );
+}

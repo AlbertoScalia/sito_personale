@@ -1,0 +1,44 @@
+body {
+  padding-top: 70px;
+  background-color: $pure-black; 
+  color: $text-white;          
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &.text-decoration-none {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+// Utility Classes
+.text-primary {
+  color: $neon-green !important; // Mantenuto per override utility bootstrap
+}
+
+.bg-light {
+  background-color: $pure-black !important;
+  color: $text-white !important;
+}
+
+// In _base.scss
+h1 span, h2 span, .section-title span {
+  color: $neon-green !important;
+}
+
+
+// Forza il reset dell'overflow globale
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+// Rimuovi margini negativi che causano scroll orizzontale
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}

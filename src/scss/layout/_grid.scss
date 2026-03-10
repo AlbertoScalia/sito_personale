@@ -1,0 +1,74 @@
+// --- SEZIONE PROGETTI (GRID) ---
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+// --- SEZIONE CLIENTI / LOGHI ---
+.clients-section {
+  padding: 100px 0;
+
+  h2 {
+    color: $text-white;
+    margin-bottom: 50px;
+  }
+
+  .client-logo-box {
+    background: rgba(255, 255, 255, 0.05);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid rgba(50, 50, 50, 0.2);
+    transition: all 0.3s ease;
+    filter: grayscale(1);
+    opacity: 0.7;
+
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 50px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      background: rgba($neon-green, 0.1);
+      border-color: $neon-green;
+      transform: scale(1.05);
+      filter: grayscale(0);
+      opacity: 1;
+
+      img {
+        filter: none;
+      }
+    }
+  }
+}
+
+// --- UTILITY PER SPAZIATURA ---
+.section-padding {
+  padding: 80px 0;
+  
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+}

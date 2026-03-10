@@ -1,0 +1,79 @@
+.navbar {
+  background-color: $pure-black;
+  border-bottom: 1px solid rgba($neon-green, 0.2);
+  height: 70px; 
+  display: flex;
+  align-items: center;
+  z-index: 1050;
+
+  .navbar-brand {
+    font-weight: 900;
+    color: $text-white;
+    &:hover { color: $neon-green; }
+  }
+
+  .nav-link {
+    color: $text-white;
+    font-weight: 900;
+    transition: color 0.3s ease;
+    &:hover, &.active { color: $neon-green; }
+  }
+
+  .navbar-toggler {
+    border: 1px solid $neon-green;
+    padding: 0.5rem;
+    // Evita ricalcoli di layout al click
+    line-height: 1;
+    
+    &:focus { box-shadow: none; }
+
+    .navbar-toggler-icon {
+      // Usiamo una transizione fluida anche sull'icona
+      transition: transform 0.3s ease-in-out;
+      filter: invert(86%) sepia(82%) saturate(1065%) hue-rotate(43deg) brightness(108%) contrast(104%);
+    }
+    
+    // Effetto opzionale: rotazione leggera al click per fluidità visiva
+    &[aria-expanded="true"] .navbar-toggler-icon {
+      transform: rotate(90deg);
+    }
+  }
+
+  // FIX DEFINITIVO ANIMAZIONE MOBILE
+  .navbar-collapse {
+    @media (max-width: 991.98px) {
+      // Reset delle transizioni di default di Bootstrap che causano scatti
+      &.collapsing {
+        height: auto !important;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out !important;
+        transform: translateY(-10px);
+        opacity: 0;
+      }
+
+      &.show {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      background-color: $pure-black;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      padding: 2rem;
+      border-bottom: 2px solid $neon-green;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      
+      // Assicuriamo che non ci siano scrollbar interne
+      overflow: hidden;
+
+      .navbar-nav {
+        text-align: center;
+        .nav-item { padding: 10px 0; }
+      }
+    }
+    
+    // Transizione per desktop e mobile (fade + slide)
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+}
