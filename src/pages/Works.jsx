@@ -11,7 +11,7 @@ const allProjects = [
         link: "https://account.start2impact.it/profile/alberto-scalia"
     },
     {
-        title: "Rivista Forward",
+        title: "Forward magazine",
         subtitle: "Art direction and design for a healthcare and multimedia horizon scanning project.",
         image: "/sito_personale/assets/images/project2.webp",
         badges: ["Art Direction", "Editorial Design", "Layout"],
@@ -39,7 +39,7 @@ const allProjects = [
         link: "https://www.behance.net/gallery/210458155/Cassandra-Poster-promozionale"
     },
     {
-        title: "Libri Flaco Edizioni Group",
+        title: "Flaco Edizioni Group Books",
         subtitle: "Interior layout design for technical manuals (SEO, Web Marketing).",
         image: "/sito_personale/assets/images/project5.webp",
         badges: ["Editorial Design", "Layout"],
@@ -53,7 +53,7 @@ const allProjects = [
         link: "https://www.behance.net/gallery/210705375/Glacier"
     },
     {
-        title: "Eclecta — Marchio e Norme",
+        title: "Eclecta — Brand and Guidelines",
         subtitle: "Brand identity development and editorial user manual consistent between print and web.",
         image: "/sito_personale/assets/images/project7.webp",
         badges: ["Brand Identity", "Typography"],

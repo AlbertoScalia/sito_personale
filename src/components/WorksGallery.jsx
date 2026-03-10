@@ -12,7 +12,7 @@ const projects = [
         link: "https://account.start2impact.it/profile/alberto-scalia"
     },
     {
-        title: "Rivista Forward",
+        title: "Forward magazine",
         subtitle: "Art direction and design for a healthcare and multimedia horizon scanning project.",
         image: "/sito_personale/assets/images/project2.webp",
         badges: ["Art Direction", "Editorial", "Layout"],
