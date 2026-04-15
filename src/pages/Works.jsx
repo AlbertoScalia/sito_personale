@@ -3,6 +3,13 @@ import LiquidCard from '../components/ui/LiquidCard';
 import MagneticButton from '../components/ui/MagneticButton';
 
 const allProjects = [
+{
+    title: "IsolaBio – Re-design website",
+    subtitle: "UX/UI design for an organic food website.",
+    image: "/sito_personale/assets/images/project12.webp",
+    badges: ["UX/UI Design", "Web Design"],
+    link: "https://www.behance.net/gallery/247551635/Re-design-Isola-Bio"
+},
     {
         title: "Start2impact Master Projects",
         subtitle: "A comprehensive collection of personal projects developed during the Master's program in Growth Marketing, UX/UI Design, and Data Analytics.",
@@ -31,6 +38,13 @@ const allProjects = [
         badges: ["Art Direction", "Editorial Design", "Layout"],
         link: "https://www.industriaeletteratura.it/prodotto/le-chitarre-del-pedrollo/"
     },
+        {
+        title: "Glacier – Prototype app",
+        subtitle: "UX/UI design for a travel app in the Nordic countries.",
+        image: "/sito_personale/assets/images/project6.webp",
+        badges: ["UX/UI Design", "App Design"],
+        link: "https://www.behance.net/gallery/210705375/Glacier"
+    },
     {
         title: "Cassandra – Poster",
         subtitle: "Visual communication based on bold typography and strong chromatic contrasts.",
@@ -44,13 +58,6 @@ const allProjects = [
         image: "/sito_personale/assets/images/project5.webp",
         badges: ["Editorial Design", "Layout"],
         link: "https://www.flacoedizioni.com"
-    },
-    {
-        title: "Glacier – Prototype app",
-        subtitle: "UX/UI design for a travel app in the Nordic countries.",
-        image: "/sito_personale/assets/images/project6.webp",
-        badges: ["UX/UI Design", "App Design"],
-        link: "https://www.behance.net/gallery/210705375/Glacier"
     },
     {
         title: "Eclecta — Brand and Guidelines",

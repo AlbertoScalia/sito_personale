@@ -9,7 +9,7 @@ export default function Footer() {
                 <div className="max-w-sm">
                     <h3 className="font-sans font-bold text-2xl tracking-tighter mb-4">alberto scalia</h3>
                     <p className="text-zinc-500 text-sm leading-relaxed mb-6">
-                        Art Director | Graphic & UX/UI Designer | Growth Specialist
+                        Art Director | Graphic & UX/UI Designer
                     </p>
                 </div>
 

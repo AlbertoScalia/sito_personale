@@ -4,6 +4,13 @@ import MagneticButton from './ui/MagneticButton';
 import { Link } from 'react-router-dom';
 
 const projects = [
+{
+    title: "IsolaBio – Re-design website",
+    subtitle: "UX/UI design for an organic food website.",
+    image: "/sito_personale/assets/images/project12.webp",
+    badges: ["UX/UI Design", "Web Design"],
+    link: "https://www.behance.net/gallery/247551635/Re-design-Isola-Bio"
+},
     {
         title: "Start2impact Master Projects",
         subtitle: "A comprehensive collection of personal projects developed during the Master's program in Growth Marketing, UX/UI Design, and Data Analytics.",
@@ -15,15 +22,29 @@ const projects = [
         title: "Forward magazine",
         subtitle: "Art direction and design for a healthcare and multimedia horizon scanning project.",
         image: "/sito_personale/assets/images/project2.webp",
-        badges: ["Art Direction", "Editorial", "Layout"],
+        badges: ["Art Direction", "Editorial Design", "Layout"],
         link: "https://forward.recentiprogressi.it/it/"
     },
     {
-        title: "lay0ut magazine",
+        title: "lay0ut magazine – senza scheletro",
         subtitle: "Art direction and experimental layout work for lay0ut magazine.",
         image: "/sito_personale/assets/images/project3.webp",
-        badges: ["Art Direction", "Experimental", "Layout"],
+        badges: ["Art Direction", "Editorial Design", "Layout"],
         link: "https://www.layoutmagazine.it/senza-scheletro-il-nuovo-cartaceo-di-leiaut-megasin/"
+    },
+    {
+        title: "Le chitarre del Pedrollo",
+        subtitle: "Editorial project focused on lutherie for the Conservatory of Vicenza.",
+        image: "/sito_personale/assets/images/project1.webp",
+        badges: ["Art Direction", "Editorial Design", "Layout"],
+        link: "https://www.industriaeletteratura.it/prodotto/le-chitarre-del-pedrollo/"
+    },
+        {
+        title: "Glacier – Prototype app",
+        subtitle: "UX/UI design for a travel app in the Nordic countries.",
+        image: "/sito_personale/assets/images/project6.webp",
+        badges: ["UX/UI Design", "App Design"],
+        link: "https://www.behance.net/gallery/210705375/Glacier"
     }
 ];
 
